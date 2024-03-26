@@ -17,10 +17,10 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "glad::@7d2128a6a3c3251ce54e"
+			"id" : "01-Window::@694c2128805941842b9c"
 		},
 		{
-			"id" : "01-Window::@694c2128805941842b9c"
+			"id" : "glad::@7d2128a6a3c3251ce54e"
 		},
 		{
 			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"

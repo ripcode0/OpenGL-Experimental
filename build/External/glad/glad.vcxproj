@@ -82,7 +82,8 @@
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExceptionHandling>
+      </ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -111,7 +112,8 @@
     <ClCompile>
       <AdditionalIncludeDirectories>C:\@ripcode\OpenGL-Experimental\External\glad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExceptionHandling>
+      </ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -142,7 +144,8 @@
     <ClCompile>
       <AdditionalIncludeDirectories>C:\@ripcode\OpenGL-Experimental\External\glad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExceptionHandling>
+      </ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -174,7 +177,8 @@
       <AdditionalIncludeDirectories>C:\@ripcode\OpenGL-Experimental\External\glad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExceptionHandling>
+      </ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -257,8 +261,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\@ripcode\OpenGL-Experimental\External\glad\winglad.h" />
-    <ClCompile Include="C:\@ripcode\OpenGL-Experimental\External\glad\winglad.cpp" />
     <ClInclude Include="C:\@ripcode\OpenGL-Experimental\External\glad\glad\glad.h" />
     <ClCompile Include="C:\@ripcode\OpenGL-Experimental\External\glad\glad\glad.c" />
   </ItemGroup>

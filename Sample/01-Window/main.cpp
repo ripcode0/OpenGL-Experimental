@@ -1,16 +1,6 @@
 #include <iostream>
 #include <windows.h>
 
-#include "winglad.h"
-
-typedef HGLRC(WINAPI* PFNWGLCREATECONTEXTATTRIBSARBPROC) (HDC hDC, HGLRC hShareContext, const int* attribList);
-
-typedef const char* (WINAPI* PFNWGLGETEXTENSIONSSTRINGEXTPROC)(void);
-typedef BOOL (WINAPI* PFNWGLSWAPINTERVALEXTPROC)(int);
-typedef int (WINAPI* PFNWGLGETSWAPINTERVALEXTPROC) (void);
-
-PFNWGLCHOOSEPIXELFORMATARBPROC wglChoosePixelFormatARB = nullptr;
-
 
 LRESULT WINAPI WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp);
 
@@ -35,7 +25,6 @@ int main(int args, char* argv[])
     HWND hwnd = CreateWindowExA(NULL, wc.lpszClassName, wc.lpszClassName,
     WS_OVERLAPPEDWINDOW, x, y, cx, cy, nullptr, 0, wc.hInstance, 0);
 
-    GL::createGLContext(hwnd);
     
     ShowWindow(hwnd, TRUE);
 
@@ -54,7 +43,9 @@ int main(int args, char* argv[])
     
     return (int)msg.lParam;
 }
-
+#if __has_include(<windows.h>)
+#define NOMINMAX
+#endif
 LRESULT WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 {
     return DefWindowProcA(hwnd, msg, wp, lp);

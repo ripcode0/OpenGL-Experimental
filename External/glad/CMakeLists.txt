@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.28)
 
-add_library(glad STATIC winglad.h winglad.cpp glad/glad.h glad/glad.c)
+add_library(glad STATIC glad/glad.h glad/glad.c)
 add_library(lib::glad ALIAS glad)
 
 #out variable for parent
